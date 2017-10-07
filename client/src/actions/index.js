@@ -7,7 +7,7 @@ export const fetchUser = () => {
     let resp = await axios.get('/api/current_user')
     dispatch({
       type: FETCH_USER,
-      payload: resp
+      payload: resp.data
     })
   }
 }
